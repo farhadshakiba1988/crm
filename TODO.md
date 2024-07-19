@@ -13,3 +13,21 @@
 
 ## آینده
 - [ ] بهینه‌سازی پرفورمنس
+
+## docker
+- [ docker ] دستورات
+- docker-compose build --no-cache
+- docker-compose up
+- docker-compose down
+
+## Git
+- [ git ] دستورات
+- git init
+- git config --global user.email "" 
+- git config --global user.name "" 
+- git remote add origin ""
+- git remote -v
+- git checkout -b main 
+- git pull origin main --allow-unrelated-histories 
+- git commit -m "" 
+- git push origin develop 
