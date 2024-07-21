@@ -1,11 +1,11 @@
 # TODO
 
 ## اولویت بالا
-- [ ] اصلاح INSTALLED_APPS در settings.py
-- [ ] بررسی تنظیمات whitenoise
-- [ ] ایجاد تغییرات که شامل نام کاربری و پسورد دیتابیس میباشد environment
-- [ ] ایجاد تغییرات به منظور تغییر نام پروژه os.environ.setdefault
-- [ ] ایجاد تغییرات environment
+-  اصلاح INSTALLED_APPS در settings.py
+-  بررسی تنظیمات whitenoise
+-  ایجاد تغییرات که شامل نام کاربری و پسورد دیتابیس میباشد environment
+-  ایجاد تغییرات به منظور تغییر نام پروژه os.environ.setdefault
+-  ایجاد تغییرات environment
 
 ## اولویت متوسط
 - [ ] آپدیت Dockerfile برای نصب وابستگی‌های جدید
@@ -15,13 +15,13 @@
 - [ ] بهینه‌سازی پرفورمنس
 
 ## docker
-- [ docker ] دستورات
+- [ ] دستورات
 - docker-compose build --no-cache
 - docker-compose up
 - docker-compose down
 
 ## Git
-- [ git ] دستورات
+- [ ] دستورات
 - git init
 - git config --global user.email "" 
 - git config --global user.name "" 
