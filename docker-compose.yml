@@ -1,14 +1,13 @@
-version: '3.9'
 services:
   app:
     build:
       context: .
-    command: ["/wait-for-it.sh", "db", "/entrypoint.sh"]
+    command: ["/app/wait-for-it.sh", "db", "--", "/app/entrypoint.sh"]
     ports:
-      - '8080:8000'
+      - '8000:8000'
     volumes:
       - .:/app
-      - ./staticfiles:/app/staticfiles
+      - static_volume:/app/staticfiles
     depends_on:
       - db
     environment:
@@ -18,12 +17,12 @@ services:
   db:
     image: postgres:16-alpine
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready -U test" ]
+      test: ["CMD-SHELL", "pg_isready -U test"]
       interval: 5s
       timeout: 5s
       retries: 5
     ports:
-      - '5433:5432'
+      - '5432:5432'
     volumes:
       - ./postgres-data:/var/lib/postgresql/data
     environment:

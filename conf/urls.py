@@ -4,5 +4,4 @@ from conf import views
 
 urlpatterns = [
     path('', views.home),
-
 ]
