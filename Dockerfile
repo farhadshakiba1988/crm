@@ -15,4 +15,6 @@ RUN chmod +x /wait-for-it.sh
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+COPY ./staticfiles /app/staticfiles
+
 CMD ["/wait-for-it.sh", "db", "/entrypoint.sh"]
